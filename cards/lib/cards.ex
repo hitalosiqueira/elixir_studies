@@ -64,9 +64,9 @@ defmodule Cards do
   end
 
   def create_hand(hand_size) do
-    Cards.create_deck
-    |>Cards.shuffle
-    |>Cards.deal(hand_size) #o resultado de uma função eh automaticamente injetado como o primeiro parametro da próxima
+    create_deck()
+    |>shuffle()
+    |>deal(hand_size) #o resultado de uma função eh automaticamente injetado como o primeiro parametro da próxima
   end
 
 end
